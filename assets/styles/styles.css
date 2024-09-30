@@ -5,45 +5,73 @@
     padding-top: .25em;
     padding-bottom: .25em;
 }
+
 body{
     background-color:#161616;
     width: 60%;
     margin-left: 20px;
 }
+
 h1{
     font-family: "Bebas Neue";
     font-weight: normal;
     font-size: 64px;
 }
+
 h2{
     font-family: "Bebas Neue";
     font-weight: normal;
     font-size: 48px;
 }
+
 h3{
     font-family: "Bebas Neue";
     font-weight: normal;
     font-size: 32px;
 }
+
 h4{
     font-family: "Playfair Display";
     font-weight: normal;
     font-size: 32px;
 }
+
 p{
     font-family: "Playfair Display";
     font-weight: normal;
     font-size: 24px;
 }
+
 a{
     color: #4B89A3;
 }
+
 a:hover{
     color:#4B89A3;
 }
+
 a:visited{
     color: #9e94ff
 }
+
 ul,ol{
     margin-left: 30px;
+}
+
+#fraktal {
+    float: right;
+    margin: 10px;
+}
+
+#newsletter-subscription-form {
+    width: fit-content;
+    background-color: #302b2b;
+    padding: 10px;
+}
+
+#article-date {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 400;
+    color: #E3EEEF;
 }
