@@ -84,3 +84,40 @@ ul,ol{
     display: flex;
     gap: 20px;
 }
+
+/* Main Navi :3333 */
+
+#main-menu button{
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    color: white;
+}
+
+header nav menu li{
+    list-style: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: left;
+}
+
+header nav menu#main-menu {
+    display: flex;
+}
+
+header nav menu.dropdown {
+    display: none;
+}
+
+header nav .dropdown-trigger:hover menu.dropdown {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 200px;
+    background-color: #161616;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
