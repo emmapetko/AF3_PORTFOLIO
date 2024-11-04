@@ -36,6 +36,7 @@ h3{
 h4{
     font-family: "Playfair Display";
     font-weight: normal;
+    font-style: italic;
     font-size: 32px;
 }
 
@@ -85,7 +86,7 @@ ul,ol{
     gap: 20px;
 }
 
-/* Main Navi :3333 */
+/* Header Navi :3333 */
 
 #main-menu button{
     background-color: transparent;
@@ -120,4 +121,54 @@ header nav .dropdown-trigger:hover menu.dropdown {
     margin: 0px;
     padding: 5px;
     text-align: center;
+}
+
+/* Index Navi :OOOO */
+
+#main-menu button{
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    color: white;
+}
+
+nav menu li{
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+}
+
+nav menu#main-menu {
+    display: flex;
+}
+
+nav menu.dropdown {
+    display: none;
+}
+
+nav .dropdown-trigger:hover menu.dropdown {
+    display: block;
+    color: white;
+    width: 200px;
+    background-color: #161616;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Footer Navi :>>>> */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
