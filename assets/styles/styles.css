@@ -12,13 +12,15 @@
 body{
     background-color:#161616;
     width: 80%;
-    margin-left: 120px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 h1{
     font-family: "Bebas Neue";
     font-weight: normal;
     font-size: 64px;
+    line-height: 50px;
 }
 
 h2{
@@ -46,6 +48,11 @@ p{
     font-size: 24px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 a{
     color: #4B89A3;
 }
@@ -62,12 +69,12 @@ ul,ol{
     margin-left: 30px;
 }
 
-#fraktal {
-    float: right;
-    margin: 10px;
+button {
+    background-color: transparent;
+    border: none;
 }
 
-#newsletter-subscription-form {
+#blog-subscription-form {
     width: fit-content;
     background-color: #302b2b;
     padding: 10px;
@@ -89,7 +96,7 @@ ul,ol{
 /* Header Navi :3333 */
 
 #main-menu button{
-    background-color: transparent;
+    background-color: #161616;
     border: none;
     margin: 0px;
     color: white;
@@ -104,7 +111,7 @@ header nav {
     justify-content: left;
 }
 
-header nav menu#main-menu {
+#main-menu {
     display: flex;
 }
 
@@ -141,10 +148,6 @@ nav {
     justify-content: left;
 }
 
-nav menu#main-menu {
-    display: flex;
-}
-
 nav menu.dropdown {
     display: none;
 }
@@ -171,4 +174,28 @@ footer menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Responsiveness */
+
+@media (max-width: 850px) {
+    main {
+        max-width: 80%;
+    }
+    nav {
+        padding: 10%;
+    }
+}
+
+#mobile-menu-button {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    #mobile-menu-button {
+        display: block;
+    }
+    #main-menu {
+        display: none;
+    }
 }
