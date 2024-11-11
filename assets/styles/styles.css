@@ -55,7 +55,8 @@ img {
 }
 
 a{
-    color: #4B89A3;
+    color: #3d967b;
+    transition: color .5s;
 }
 
 a:hover{
@@ -63,7 +64,8 @@ a:hover{
 }
 
 a:visited{
-    color: #9e94ff
+    color: #9e94ff;
+    transition: color .5s;
 }
 
 ul,ol{
