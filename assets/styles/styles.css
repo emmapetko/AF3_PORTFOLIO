@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     color:#E3EEEF;
@@ -9,67 +9,105 @@
     padding-bottom: .25em;
 }
 
-body{
+body {
     background-color:#161616;
     width: 80%;
     margin: auto;
     margin-top: 30px;
 }
 
-h1{
+h1 {
     font-family: "Bebas Neue";
     font-weight: normal;
     font-size: 64px;
     line-height: 50px;
+    letter-spacing: -3px;
 }
 
-h2{
+h2 {
     font-family: "Bebas Neue";
     font-weight: normal;
     font-size: 48px;
     line-height: 40px;
+    letter-spacing: -2px;
 }
 
-h3{
+h3 {
     font-family: "Bebas Neue";
     font-weight: normal;
     font-size: 32px;
+    line-height: 30px;
+    letter-spacing: -1px;
 }
 
-h4{
+h4 {
     font-family: "Playfair Display";
     font-weight: normal;
     font-style: italic;
     font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
 }
 
-p{
+p {
     font-family: "Playfair Display";
     font-weight: normal;
     font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -1px;
 }
 
 img {
     display: block;
     max-width: 100%;
+    border-radius: 20px;
 }
 
-a{
-    color: #3d967b;
+a {
+    color: white;
     transition: color .5s;
+    text-decoration: none;
 }
 
-a:hover{
-    color:#4B89A3;
-}
-
-a:visited{
+a:hover {
     color: #9e94ff;
+}
+
+a:visited {
+    color: white;
     transition: color .5s;
+}
+
+a:visited:hover {
+    color: #9e94ff;
 }
 
 ul,ol{
     margin-left: 30px;
+}
+
+li {
+    line-height: 20px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+aside {
+    float: right;
+    width: 45%;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+}
+
+.side-imgs img {
+    padding-bottom: 20px;
+    margin: 20px;
 }
 
 button {
@@ -83,17 +121,24 @@ button {
     padding: 10px;
 }
 
-#article-date {
+.article-date {
     font-family: "Playfair Display";
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     color: #E3EEEF;
+    line-height: 10px;
+    letter-spacing: -1px;
 }
 
 .article-flex {
-    justify-content: center;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.article-flex article {
+    width: 33%;
 }
 
 /* Header Navi :3333 */
@@ -126,7 +171,7 @@ header nav .dropdown-trigger:hover menu.dropdown {
     display: block;
     position: absolute;
     color: white;
-    width: 200px;
+    width: 20%;
     background-color: #161616;
     margin: 0px;
     padding: 5px;
@@ -179,6 +224,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer li {
+    margin: 0;
+    gap: 0;
+    padding: 0;
 }
 
 footer menu {
