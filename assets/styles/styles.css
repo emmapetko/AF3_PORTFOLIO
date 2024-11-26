@@ -182,6 +182,7 @@ header nav {
 
 #main-menu {
     display: flex;
+    justify-content: right;
 }
 
 header nav menu.dropdown {
@@ -200,7 +201,6 @@ header nav .dropdown-trigger:hover menu.dropdown {
     border-style: double;
     border-color: white;
     align-items: center;
-    width: 5em;
 }
 
 /* Index Navi :OOOO */
