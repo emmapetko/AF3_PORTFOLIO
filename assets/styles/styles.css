@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color:#161616;
+    background-color:#101010;
     width: 80%;
     margin: auto;
     margin-top: 30px;
@@ -67,6 +67,8 @@ a {
     color: white;
     transition: color .5s;
     text-decoration: none;
+    line-height: 20px;
+    letter-spacing: -.5px;
 }
 
 a:hover {
@@ -143,14 +145,23 @@ button {
 
 /* Header Navi :3333 */
 
-#main-menu button{
+header {
     background-color: #161616;
+    border-style: double;
+    border-radius: 20px;
+    border-color: white;
+    position: sticky;
+    top: 20px;
+}
+
+#main-menu button{
+    background-color: transparent;
     border: none;
-    margin: 0px;
     color: white;
     font-family: 'Bebas Neue';
     font-size: 40px;
     cursor: pointer;
+    line-height: 30px;
 }
 
 header menu li{
@@ -158,14 +169,15 @@ header menu li{
 }
 
 header nav menu{
-    display: flex;
-    justify-content: space-around;
+    justify-content: right;
     padding: 10px;
 }
 
 header nav {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
 }
 
 #main-menu {
@@ -180,11 +192,15 @@ header nav .dropdown-trigger:hover menu.dropdown {
     display: block;
     position: absolute;
     color: white;
-    width: 20%;
-    background-color: #161616;
+    background-color:#161616;
     margin: 0px;
     padding: 5px;
     text-align: center;
+    border-radius: 20px;
+    border-style: double;
+    border-color: white;
+    align-items: center;
+    width: 5em;
 }
 
 /* Index Navi :OOOO */
@@ -204,11 +220,6 @@ nav menu li{
     list-style: none;
 }
 
-nav {
-    display: flex;
-    justify-content: left;
-}
-
 nav menu.dropdown {
     display: none;
 }
@@ -216,15 +227,19 @@ nav menu.dropdown {
 nav .dropdown-trigger:hover menu.dropdown {
     display: block;
     color: white;
-    width: 200px;
-    background-color: #161616;
+    width: 10em;
+    box-sizing: border-box;
+    background-color: transparent;
     margin: 0px;
     padding: 5px;
     text-align: center;
+    justify-content: center;
+    align-self: center;
     font-family: "Playfair Display";
     font-size: 18px;
     font-style: italic;
     line-height: 20px;
+    padding-bottom: 20px;
 }
 
 /* Footer Navi :>>>> */
