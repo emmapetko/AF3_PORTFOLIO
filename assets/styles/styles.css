@@ -45,7 +45,7 @@ h4 {
     font-weight: normal;
     font-style: italic;
     font-size: 32px;
-    line-height: 40px;
+    line-height: 30px;
     letter-spacing: -0.5px;
 }
 
@@ -95,8 +95,8 @@ li {
 section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px;
+    justify-content: left;
+    padding: 10px;
 }
 
 aside {
@@ -143,6 +143,15 @@ button {
     width: 33%;
 }
 
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    border-style: double;
+}
+
 /* Header Navi :3333 */
 
 header {
@@ -152,6 +161,11 @@ header {
     border-color: white;
     position: sticky;
     top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    height: 100px;
 }
 
 #main-menu button{
@@ -159,7 +173,7 @@ header {
     border: none;
     color: white;
     font-family: 'Bebas Neue';
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     line-height: 30px;
 }
@@ -168,7 +182,13 @@ header menu li{
     list-style: none;
 }
 
-header nav menu{
+header nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+header nav menu {
     justify-content: right;
     padding: 10px;
 }
@@ -177,7 +197,6 @@ header nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 10px;
 }
 
 #main-menu {
@@ -201,6 +220,72 @@ header nav .dropdown-trigger:hover menu.dropdown {
     border-style: double;
     border-color: white;
     align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search button {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Mobile Header Navi :PPP */
+
+#mobile-nav {
+    display: none;
+}
+
+#mobile-nav button {
+    background-color: transparent;
+    border: 0;
+}
+
+#overlay-menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 100;
+    display: none;
+}
+
+#overlay-menu {
+    background-color: #101010;
+    width: 70%;
+    border-radius: 20px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    border-style: double;
+}
+
+#overlay-menu menu {
+    padding-left: 0;
+}
+
+#overlay-menu menu li a {
+    font-size: 28px;
+    margin-block: 10px;
+    display: inline-block;
+}
+
+#close-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 /* Index Navi :OOOO */
@@ -264,24 +349,17 @@ footer menu {
 
 /* Responsiveness */
 
-@media (max-width: 850px) {
+@media (max-width: 1250px) {
     main {
         max-width: 80%;
     }
     nav {
         padding: 10%;
     }
-}
-
-#mobile-menu-button {
-    display: none;
-}
-
-@media (max-width: 1024px) {
-    #mobile-menu-button {
-        display: block;
-    }
     #main-menu {
         display: none;
+    }
+    #mobile-nav {
+        display: block;
     }
 }
