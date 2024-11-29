@@ -152,6 +152,38 @@ input {
     border-style: double;
 }
 
+/* Preview Thumbs */
+
+#preview-thumbs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#wide-big-preview-thumb {
+    grid-column: 1 / span 2; 
+    grid-row: 1 / span 2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Header Navi :3333 */
 
 header {
