@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
-    margin: auto;
+    margin: 0;
     padding: 0;
     color:#E3EEEF;
     padding-top: .25em;
@@ -152,44 +152,6 @@ input {
     border-style: double;
 }
 
-/* Thumbnails */
-
-#preview-thumbs {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-#preview-thumbs img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-}
-
-#preview-thumbs article {
-    position: relative;
-}
-
-#preview-thumbs .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.8);
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    border-radius: 20px;
-    transition: opacity .5s;
-}
-
-#preview-thumbs .overlay:hover {
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 /* Header Navi :3333 */
 
 header {
@@ -200,12 +162,10 @@ header {
     position: sticky;
     top: 20px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
-    height: 10%;
-    width: 90%;
+    height: 100px;
 }
 
 #main-menu button{
@@ -225,8 +185,7 @@ header menu li{
 header nav div {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 0;    
+    align-items: center;    
 }
 
 header nav menu {
@@ -236,8 +195,8 @@ header nav menu {
 
 header nav {
     display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 10px;
 }
 
 #main-menu {
@@ -269,7 +228,6 @@ header nav .dropdown-trigger:hover menu.dropdown {
     background-color: transparent;
     border-radius: 5px;
     padding: 5px;
-    margin-top: 0;
 }
 
 .search button {
