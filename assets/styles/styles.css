@@ -96,7 +96,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    padding: 10px;
 }
 
 aside {
@@ -150,6 +149,19 @@ input {
     outline: none;
     background-color: transparent;
     border-style: double;
+}
+
+/* Comm Organizers */
+
+.comm-page {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    padding: 10px;
+}
+
+#comm-section {
+    justify-content: left;
 }
 
 /* Preview Thumbs */
