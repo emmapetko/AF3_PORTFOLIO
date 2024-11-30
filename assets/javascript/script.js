@@ -15,3 +15,12 @@ $('#menu-button').click( function() {
 $('#close-menu').click( function(){
     $('#overlay-menu-container').fadeOut(250);
 });
+
+$('.comm-dropdown').click( function() {
+    $(this).children('p').slideToggle(500)
+    $(this).children('button').toggleClass('closed open')
+});
+
+$('#menu-button').click( function() {
+    $('#overlay-menu-container').fadeIn(250);
+});

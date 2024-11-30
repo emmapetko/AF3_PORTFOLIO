@@ -114,6 +114,8 @@ aside {
 button {
     background-color: transparent;
     border: none;
+    font-family: "Bebas Neue";
+    font-size: 24px;
 }
 
 #blog-subscription-form {
@@ -153,15 +155,38 @@ input {
 
 /* Comm Organizers */
 
-.comm-page {
-    display: flex;
-    justify-content: space-between;
-    width: 48%;
-    padding: 10px;
+main button {
+    background-color: transparent;
+    border: none;
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    color: #E3EEEF;
+    padding: 0px;
+    width: 100%;
+    justify-content: left;
+    border-bottom: 2px solid #E3EEEF;
+    text-align: left;
+    position: relative;
+    padding-block: 15px;
+    padding-right: 20px;
+    cursor: pointer;
 }
 
-#comm-section {
-    justify-content: left;
+main button.closed::after {
+    content: '+';
+    position: absolute;
+    right: 0px;
+    transition: .5s;
+}
+
+main button.open::after {
+    content: '-';
+    position: absolute;
+    right: 0px;
+}
+
+.comm-dropdown p, img, {
+    display: none;
 }
 
 /* Preview Thumbs */
