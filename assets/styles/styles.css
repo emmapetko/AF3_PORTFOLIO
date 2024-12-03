@@ -179,7 +179,11 @@ main button.closed::after {
     transition: .5s;
 }
 
-.comm-dropdown p, img {
+.comm-dropdown p {
+    display: none;
+}
+
+.comm-dropdown img {
     display: none;
 }
 
@@ -200,6 +204,10 @@ main button.open::after {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+#preview-thumbs-container article {
+    position: relative;
 }
 
 #wide-big-preview-thumb {
@@ -239,6 +247,7 @@ header {
     justify-content: space-between;
     padding: 10px 10px;
     height: 100px;
+    z-index: 99;
 }
 
 #main-menu button{
