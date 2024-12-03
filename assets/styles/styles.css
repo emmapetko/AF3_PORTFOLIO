@@ -179,14 +179,18 @@ main button.closed::after {
     transition: .5s;
 }
 
+.comm-dropdown p, img {
+    display: none;
+}
+
+.comm-dropdown-secondary p {
+    display: none;
+}
+
 main button.open::after {
     content: '-';
     position: absolute;
     right: 0px;
-}
-
-.comm-dropdown p, img, {
-    display: none;
 }
 
 /* Preview Thumbs */
@@ -420,15 +424,53 @@ footer menu {
 
 @media (max-width: 1250px) {
     main {
-        max-width: 80%;
+        max-width: 90%;
     }
+
     nav {
         padding: 10%;
     }
+
     #main-menu {
         display: none;
     }
+
     #mobile-nav {
         display: block;
+    }
+
+    body {
+        background-color:#101010;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-family: "Bebas Neue";
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 40px;
+        letter-spacing: -2px;
+    }
+
+    h2 {
+        font-family: "Bebas Neue";
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 30px;
+        letter-spacing: -2px;
+    }
+
+    p {
+        font-family: "Playfair Display";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: -1px;
     }
 }

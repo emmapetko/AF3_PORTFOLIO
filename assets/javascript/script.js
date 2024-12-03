@@ -17,8 +17,13 @@ $('#close-menu').click( function(){
 });
 
 $('.comm-dropdown').click( function() {
+    $(this).children('p, img, button').slideToggle(500)
+    $(this).children('#first-dropdown').toggleClass('closed open')
+});
+
+$('.comm-dropdown-secondary').click( function() {
     $(this).children('p').slideToggle(500)
-    $(this).children('button').toggleClass('closed open')
+    $(this).children('#second-dropdown').toggleClass('closed open')
 });
 
 $('#menu-button').click( function() {
