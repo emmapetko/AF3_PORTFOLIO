@@ -29,3 +29,8 @@ $('.comm-dropdown-secondary').click( function() {
 $('#menu-button').click( function() {
     $('#overlay-menu-container').fadeIn(250);
 });
+
+$('.dropdown-trigger').click(function(){
+    $(this).toggleClass('closed open')
+    $(this).siblings(".dropdown-content").slideToggle(500)
+  });
