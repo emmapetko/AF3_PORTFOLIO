@@ -184,43 +184,38 @@ main button.closed::after {
   }
 
 .dropdown-content img {
-    width: 75%;
-    justify-content: center;
+    border-radius: 20px;
 }
   
-  .dropdown-trigger {
-    
+.dropdown-trigger {
     background-color: transparent;
     width: 100%;
     text-align: left;
     border: 0;
     border-bottom: 1px solid;
-    
-  }
-  
-  .dropdown-trigger.closed::after {
+}
+
+.dropdown-trigger.closed::after {
       content: '+';
       position: absolute;
       right: 0px;
-      
-  }
+}
   
-  .dropdown-trigger.open::after {
+.dropdown-trigger.open::after {
       content: '-';
       position: absolute;
       right: 0px;
-      
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
       display: none;
-  }
+}
   
-  main button.open::after {
+main button.open::after {
       content: '-';
       position: absolute;
       right: 0px;
-  }
+}
 
 /* Preview Thumbs */
 
@@ -470,11 +465,23 @@ footer menu {
     align-items: center;
 }
 
+.footer-buttons {
+    background-color: transparent;
+    border: none;
+    font-family: "Bebas Neue";
+    font-size: 24px;
+}
+
 /* Responsiveness */
 
 @media (max-width: 1250px) {
     main {
-        max-width: 90%;
+        max-width: 100%;
+        margin-left: 5%;
+    }
+
+    body {
+        width: 100%;
     }
 
     nav {
@@ -492,7 +499,7 @@ footer menu {
     body {
         background-color:#101010;
         width: 90%;
-        margin: auto;
+        margin: 20px;
         margin-top: 20px;
     }
 
