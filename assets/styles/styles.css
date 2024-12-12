@@ -187,7 +187,7 @@ main button.closed::after {
     border-radius: 20px;
 }
   
-.dropdown-trigger {
+.comm-dropdown-trigger {
     background-color: transparent;
     width: 100%;
     text-align: left;
@@ -195,13 +195,13 @@ main button.closed::after {
     border-bottom: 1px solid;
 }
 
-.dropdown-trigger.closed::after {
+.comm-dropdown-trigger.closed::after {
       content: '+';
       position: absolute;
       right: 0px;
 }
   
-.dropdown-trigger.open::after {
+.comm-dropdown-trigger.open::after {
       content: '-';
       position: absolute;
       right: 0px;
@@ -311,6 +311,16 @@ header nav menu {
     padding: 10px;
 }
 
+header .header-dropdown-trigger {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
 header nav {
     display: flex;
     justify-content: center;
@@ -368,6 +378,29 @@ header nav .dropdown-trigger:hover menu.dropdown {
     border: 0;
 }
 
+#mobile-menu li {
+    border-top: 1px solid •#333651; 
+    padding-top: 20px;
+}
+
+#mobile-menu .dropdown {
+    display: block;
+    position: relative; 
+    margin-top: 10px;
+}
+
+#mobile-menu-dropdown li {
+    border-top: 1px solid #fff;
+}
+
+#mobile-menu-dropdown li:first-child {
+    border-top: 0px;
+}
+
+nav #mobile-nav {
+    width: auto;
+}
+
 #overlay-menu-container {
     position: absolute;
     top: 0;
@@ -388,6 +421,8 @@ header nav .dropdown-trigger:hover menu.dropdown {
     padding: 50px;
     position: relative;
     border-style: double;
+    display: flex;
+    flex-direction: column;
 }
 
 #overlay-menu menu {
@@ -425,6 +460,15 @@ nav menu li{
 
 nav menu.dropdown {
     display: none;
+}
+
+nav .dropdown-trigger {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    cursor: pointer;
 }
 
 nav .dropdown-trigger:hover menu.dropdown {
@@ -475,6 +519,7 @@ footer menu {
 /* Responsiveness */
 
 @media (max-width: 1250px) {
+
     main {
         max-width: 100%;
         margin-left: 5%;
@@ -494,7 +539,14 @@ footer menu {
 
     #mobile-nav {
         display: block;
+        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
     }
+
+    .search-bar {
+        display: none;
+      }
 
     body {
         background-color:#101010;

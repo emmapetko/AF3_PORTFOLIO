@@ -30,7 +30,12 @@ $('#menu-button').click( function() {
     $('#overlay-menu-container').fadeIn(250);
 });
 
+$('.comm-dropdown-trigger').click(function(){
+    $(this).toggleClass('closed open')
+    $(this).siblings(".dropdown-content").slideToggle(500)
+});
+
 $('.dropdown-trigger').click(function(){
     $(this).toggleClass('closed open')
     $(this).siblings(".dropdown-content").slideToggle(500)
-  });
+});
