@@ -118,6 +118,14 @@ button {
     font-size: 24px;
 }
 
+span {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
 #blog-subscription-form {
     width: fit-content;
     background-color: #302b2b;
@@ -135,14 +143,31 @@ button {
 
 .article-flex {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
 }
 
-.article-flex article {
-    width: 33%;
+#standard-article {
+    flex: 2 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 5px;
+    object-fit: cover;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
+
+.article-flex img {
+    max-width: 100%;
+    object-fit: cover; 
+  }
+
+#standard-article:hover {
+    box-shadow: 0 4px 8px rgba(.4, .4, .4, 0);
+    transform: translateY(-5px);
+  }
 
 input {
     border: none;
@@ -185,6 +210,7 @@ main button.closed::after {
 
 .dropdown-content img {
     border-radius: 20px;
+    width: 75%;
 }
   
 .comm-dropdown-trigger {
@@ -533,21 +559,6 @@ footer menu {
         padding: 10%;
     }
 
-    #main-menu {
-        display: none;
-    }
-
-    #mobile-nav {
-        display: block;
-        padding: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .search-bar {
-        display: none;
-      }
-
     body {
         background-color:#101010;
         width: 90%;
@@ -575,6 +586,14 @@ footer menu {
         letter-spacing: -2px;
     }
 
+    h3 {
+        font-family: "Bebas Neue";
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 20px;
+        letter-spacing: -.5px;
+    }
+
     p {
         font-family: "Playfair Display";
         font-weight: normal;
@@ -582,4 +601,51 @@ footer menu {
         line-height: 15px;
         letter-spacing: -1px;
     }
-}
+
+    a {
+        font-size: 20px;
+    }
+
+    span {
+        font-family: "Playfair Display";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: -1px;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: block;
+        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .search-bar {
+        display: none;
+      }
+
+    #standard-article {
+        flex: 2 1 100%;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .article-flex img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        margin-right: 1rem;
+        display: block;
+    }
+
+    .dropdown-content img {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    }
