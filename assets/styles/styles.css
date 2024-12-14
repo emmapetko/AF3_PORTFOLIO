@@ -126,10 +126,75 @@ span {
     letter-spacing: -1px;
 }
 
+/* IDK Where This Goes:tm: */
+
+/* Article Formatting and Previews */
+
+aside {
+    padding: 20px;
+}
+
+.article-images {
+    max-width: 50%;
+}
+
+.article-segments {
+    padding: 20px;
+}
+
 #blog-subscription-form {
     width: fit-content;
-    background-color: #302b2b;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    border-style: double;
+}
+
+form h2 {
+    padding-bottom: 0;
+}
+
+form p {
+    padding-bottom: 10px;
+}
+
+.form-button {
+    border: none;
+    font-size: 16px;
+    line-height: 10px;
+    letter-spacing: -1px;
+    color: #E3EEEF;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    border-style: double;
+    width: fit-content;
+}
+
+label {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-size: 16px;
+    color: #E3EEEF;
+    line-height: 0px;
+    letter-spacing: -1px;
+}
+
+input {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-size: 16px;
+    color: #E3EEEF;
+    line-height: 10px;
+    letter-spacing: -1px;
+    border: none;
     padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    border-style: double;
 }
 
 .article-date {
@@ -153,29 +218,21 @@ span {
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 5px;
+    padding: 10px;
     object-fit: cover;
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
 
 .article-flex img {
-    max-width: 100%;
+    width: 100%;
+    max-height: 300px;
     object-fit: cover; 
-  }
+}
 
 #standard-article:hover {
     box-shadow: 0 4px 8px rgba(.4, .4, .4, 0);
     transform: translateY(-5px);
-  }
-
-input {
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    outline: none;
-    background-color: transparent;
-    border-style: double;
 }
 
 /* Comm Organizers */
@@ -627,7 +684,19 @@ footer menu {
 
     .search-bar {
         display: none;
-      }
+    }
+
+    .article-segments {
+        padding: 10px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .article-images {
+        max-width: 100%;
+    }
 
     #standard-article {
         flex: 2 1 100%;

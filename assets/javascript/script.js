@@ -39,3 +39,5 @@ $('.dropdown-trigger').click(function(){
     $(this).toggleClass('closed open')
     $(this).siblings(".dropdown-content").slideToggle(500)
 });
+
+AOS.init();
