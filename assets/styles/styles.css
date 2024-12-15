@@ -385,7 +385,6 @@ header menu li{
 
 header nav div {
     display: flex;
-    justify-content: center;
     align-items: center;    
 }
 
@@ -401,6 +400,7 @@ header .header-dropdown-trigger {
     font-family: 'Bebas Neue';
     font-size: 30px;
     cursor: pointer;
+    position: relative;
     line-height: 30px;
 }
 
@@ -412,7 +412,6 @@ header nav {
 
 #main-menu {
     display: flex;
-    justify-content: right;
 }
 
 header nav menu.dropdown {
@@ -421,16 +420,15 @@ header nav menu.dropdown {
 
 header nav .dropdown-trigger:hover menu.dropdown {
     display: block;
+    text-align: left;
     position: absolute;
     color: white;
+    width: fit-content;
     background-color:#161616;
-    margin: 0px;
-    padding: 5px;
-    text-align: center;
+    padding: 10px;
     border-radius: 20px;
     border-style: double;
     border-color: white;
-    align-items: center;
 }
 
 .search {
@@ -508,10 +506,6 @@ nav #mobile-nav {
     flex-direction: column;
 }
 
-#overlay-menu menu {
-    padding-left: 0;
-}
-
 #overlay-menu menu li a {
     font-size: 28px;
     margin-block: 10px;
@@ -524,17 +518,21 @@ nav #mobile-nav {
     right: 20px;
 }
 
-/* Index Navi :OOOO */
+/* Index :OOOO */
+
+#index-menu {
+    padding: 0;
+}
 
 #index-menu button{
     background-color: transparent;
     border: none;
-    margin: 0px;
+    margin: 0;
     color: white;
     font-family: "Bebas Neue";
-    font-size: 24px;
-    font-kerning: -4px;
-    line-height: 10px;
+    font-size: 30px;
+    padding: 0;
+    text-align: left;
 }
 
 nav menu li{
@@ -543,6 +541,7 @@ nav menu li{
 
 nav menu.dropdown {
     display: none;
+    padding-bottom: 0;
 }
 
 nav .dropdown-trigger {
@@ -551,7 +550,9 @@ nav .dropdown-trigger {
     color: white;
     font-family: 'Bebas Neue';
     font-size: 30px;
+    padding: 0;
     cursor: pointer;
+    text-align: left;
 }
 
 nav .dropdown-trigger:hover menu.dropdown {
@@ -562,14 +563,21 @@ nav .dropdown-trigger:hover menu.dropdown {
     background-color: transparent;
     margin: 0px;
     padding: 5px;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-self: center;
     font-family: "Playfair Display";
     font-size: 18px;
     font-style: italic;
     line-height: 20px;
-    padding-bottom: 20px;
+}
+
+.index-logo {
+    width: 20%;
+}
+
+h1.index-top {
+    line-height: 5px !important;
 }
 
 /* Footer Navi :>>>> */
@@ -610,10 +618,6 @@ footer menu {
 
     body {
         width: 100%;
-    }
-
-    nav {
-        padding: 10%;
     }
 
     body {
@@ -686,6 +690,25 @@ footer menu {
         display: none;
     }
 
+    .dropdown {
+        padding: 10px;
+    }
+
+    header nav div {
+        padding: 0;
+    }
+
+    #overlay-menu {
+        padding: 20px;
+    }
+
+    #overlay-menu menu li a {
+        font-size: 20px;
+        margin-block: 0;
+        display: inline-block;
+        padding: 5px;
+    }
+
     .article-segments {
         padding: 10px;
     }
@@ -715,6 +738,11 @@ footer menu {
     .dropdown-content img {
         border-radius: 20px;
         width: 100%;
+    }
+
+    .index-logo {
+        width: 80%;
+        justify-content: center;
     }
 
     }
