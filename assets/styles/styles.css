@@ -61,6 +61,7 @@ img {
     display: block;
     max-width: 100%;
     border-radius: 20px;
+    padding: 0;
 }
 
 a {
@@ -115,7 +116,7 @@ button {
     background-color: transparent;
     border: none;
     font-family: "Bebas Neue";
-    font-size: 24px;
+    font-size: 30px;
 }
 
 span {
@@ -545,7 +546,7 @@ nav menu.dropdown {
 }
 
 nav .dropdown-trigger {
-    background-color: transparent;
+    background-color: #101010;
     border: none;
     color: white;
     font-family: 'Bebas Neue';
@@ -560,7 +561,7 @@ nav .dropdown-trigger:hover menu.dropdown {
     color: white;
     width: 10em;
     box-sizing: border-box;
-    background-color: transparent;
+    background-color: #101010;
     margin: 0px;
     padding: 5px;
     text-align: left;
