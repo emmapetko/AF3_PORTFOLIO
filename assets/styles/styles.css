@@ -458,6 +458,7 @@ header nav .dropdown-trigger:hover menu.dropdown {
 #mobile-nav button {
     background-color: transparent;
     border: 0;
+    padding-top: 20px;
 }
 
 #mobile-menu li {
@@ -526,6 +527,7 @@ nav #mobile-nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-right: 10%;
 }
 
 #index-main {
@@ -571,8 +573,8 @@ nav .dropdown-trigger {
     text-align: left;
 }
 
-nav .dropdown-trigger:hover menu.dropdown {
-    display: block;
+nav .dropdown-trigger .dropdown {
+    display: none;
     color: white;
     width: 10em;
     box-sizing: border-box;
@@ -580,12 +582,16 @@ nav .dropdown-trigger:hover menu.dropdown {
     margin: 0px;
     padding: 5px;
     text-align: left;
-    justify-content: center;
-    align-self: center;
     font-family: "Playfair Display";
     font-size: 18px;
     font-style: italic;
     line-height: 20px;
+    transition: transform 1s ease;
+}
+
+nav .dropdown-trigger:hover menu.dropdown {
+    display: block;
+    width: 10em;
 }
 
 .index-logo {
