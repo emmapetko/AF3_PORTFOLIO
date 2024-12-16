@@ -7,7 +7,7 @@ if(jQuery) {
 else {
     console.log("jQuery fell off.")
 }
-
+  
 $('#menu-button').click( function() {
     $('#overlay-menu-container').fadeIn(250);
 });
