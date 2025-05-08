@@ -149,6 +149,9 @@ span {
 
 .article-segments {
     padding: 20px;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 40px;
 }
 
 #blog-subscription-form {
