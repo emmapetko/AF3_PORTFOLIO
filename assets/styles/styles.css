@@ -312,6 +312,28 @@ main button.open::after {
       right: 0px;
 }
 
+/* Portfolio Imagery */
+
+.portfolio-segments {
+    padding: 20px;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 40px;
+}
+
+.portfolio-segments img {
+    width: 49%;
+    padding: 5px;
+}
+
+.portfolio-text {
+    padding: 20px;
+    flex-direction: row;
+    text-align: left;
+    padding-right: 40px;
+    width: 75%;
+}
+
 /* Preview Thumbs */
 
 #preview-thumbs-container {
@@ -350,6 +372,7 @@ main button.open::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     opacity: 0;
     padding: 0;
     transition: opacity .5s;
@@ -775,6 +798,18 @@ footer menu {
 
     aside {
         display: none;
+    }
+
+    .portfolio-segments {
+        padding: 10px;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 20px;
+    }
+
+    .portfolio-segments img {
+        width: 99%;
+        padding: 5px;
     }
 
     .article-images {
