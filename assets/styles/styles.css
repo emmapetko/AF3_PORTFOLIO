@@ -306,6 +306,9 @@ main button.open::after {
 /* Portfolio Imagery */
 
 .portfolio-segments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
     flex-direction: row;
     text-align: left;
@@ -313,8 +316,8 @@ main button.open::after {
 }
 
 .portfolio-segments img {
-    width: 49%;
-    padding: 5px;
+    width: 33%;
+    padding-bottom: 5px;
 }
 
 .portfolio-text {
@@ -329,7 +332,7 @@ main button.open::after {
 
 #preview-thumbs-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
