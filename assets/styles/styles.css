@@ -382,6 +382,18 @@ main button.open::after {
     opacity: 1;
 }
 
+/* WIP Notification Header*/
+
+.wip-header {
+    background-color: #3f3e41;
+    border-style: double;
+    top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: auto;
+    z-index: 99;
+}
+
 /* Header Navi :3333 */
 
 header {
